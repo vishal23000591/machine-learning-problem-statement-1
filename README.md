@@ -15,7 +15,7 @@ However, the complexity of medical terminology and the volume of healthcare data
 
 ## Solution Overview
 
-### Goal
+### Deliverables
 
 Develop an AI-based solution that automates Boolean query generation for healthcare applications. This system will leverage natural language processing (NLP) and AI techniques to create precise and contextually relevant queries that can:
 
