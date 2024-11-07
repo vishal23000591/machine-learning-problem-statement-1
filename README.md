@@ -43,3 +43,7 @@ Develop an AI-based solution that automates Boolean query generation for healthc
 - **Flexible Query Templates**: Supports different healthcare information needs, including research data, patient records, drug interactions, and diagnostic results.
 - **Symptom & Diagnostic Data**: Access data for complex cases involving multiple symptoms and lab results.
 - **Research Studies & Clinical Trials**: Retrieve studies relevant to specific treatments, conditions, or patient demographics.
+
+---
+
+### Note: This serves only as a reference example. Innovative ideas and unique implementation techniques are highly encouraged and warmly welcomed! 
