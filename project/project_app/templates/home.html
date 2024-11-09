@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Analysis System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(120deg, #1a365d 0%, #2563eb 100%);
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .result-card {
+            transition: all 0.3s ease;
+        }
+        .result-card:hover {
+            transform: translateY(-2px);
+        }
+        .status-normal { color: #059669; }
+        .status-abnormal { color: #dc2626; }
+        .loading {
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="gradient-bg">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-white mb-2">
+                <i class="fas fa-heartbeat mr-3"></i>Medical Analysis System
+            </h1>
+            <p class="text-gray-200">Advanced Health Analysis & Diagnostics</p>
+        </header>
+
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Left Column: Input Form -->
+                <div class="glass-card rounded-xl p-6 h-fit">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">
+                        <i class="fas fa-file-medical mr-2"></i>Medical Information
+                    </h2>
+                    <form id="analysisForm" class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 text-sm font-semibold mb-2">Medical Description</label>
+                            <textarea 
+                                name="description" 
+                                rows="6" 
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="Enter patient symptoms, medical history, or doctor's notes..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 text-sm font-semibold mb-2">Medical Image (Optional)</label>
+                            <label class="flex flex-col items-center w-full px-4 py-6 bg-white rounded-lg border-2 border-dashed border-gray-300 cursor-pointer hover:bg-gray-50">
+                                <i class="fas fa-cloud-upload-alt text-3xl text-gray-400"></i>
+                                <span class="mt-2 text-sm text-gray-500">Upload medical report or scan</span>
+                                <input type="file" name="image" class="hidden" accept="image/*">
+                            </label>
+                        </div>
+
+                        <button 
+                            type="submit"
+                            class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                        >
+                            <i class="fas fa-microscope mr-2"></i>Analyze
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Column: Results -->
+                <div class="space-y-6">
+                    <!-- Keywords Section -->
+                    <div class="glass-card rounded-xl p-6 result-card">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">
+                            <i class="fas fa-tags text-blue-600 mr-2"></i>Detected Keywords
+                        </h2>
+                        <div id="keywords" class="flex flex-wrap gap-2">
+                            <p class="text-gray-500 italic">Keywords will appear here after analysis</p>
+                        </div>
+                    </div>
+
+                    <!-- AI Analysis Section -->
+                    <div class="glass-card rounded-xl p-6 result-card">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">
+                            <i class="fas fa-robot text-blue-600 mr-2"></i>AI Analysis
+                        </h2>
+                        <div id="aiAnalysis" class="prose prose-blue max-w-none">
+                            <p class="text-gray-500 italic">AI analysis will appear here after processing</p>
+                        </div>
+                    </div>
+
+                    <!-- Image Analysis Section -->
+                    <div id="imageAnalysisCard" class="glass-card rounded-xl p-6 result-card hidden">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">
+                            <i class="fas fa-chart-line text-blue-600 mr-2"></i>Vital Signs
+                        </h2>
+                        <div id="imageAnalysis" class="grid grid-cols-2 gap-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div id="loadingOverlay" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+            <div class="bg-white rounded-lg p-8 flex flex-col items-center">
+                <i class="fas fa-circle-notch loading text-4xl text-blue-600 mb-4"></i>
+                <p class="text-gray-800">Analyzing medical data...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('analysisForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            const imageAnalysisCard = document.getElementById('imageAnalysisCard');
+            
+            try {
+                loadingOverlay.classList.remove('hidden');
+                
+                const formData = new FormData(e.target);
+                const response = await fetch('/analyze/', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    // Update Keywords
+                    const keywordsDiv = document.getElementById('keywords');
+                    keywordsDiv.innerHTML = data.keywords.map(k => `
+                        <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-sm">
+                            ${k.term} 
+                            <span class="text-blue-600">(${k.category})</span>
+                        </span>
+                    `).join('') || '<p class="text-gray-500">No keywords detected</p>';
+                    
+                    // Update AI Analysis
+                    const aiAnalysisDiv = document.getElementById('aiAnalysis');
+                    aiAnalysisDiv.innerHTML = data.ai_analysis
+                        .split('\n')
+                        .map(line => `<p class="mb-2">${line}</p>`)
+                        .join('');
+                    
+                    // Update Image Analysis
+                    if (Object.keys(data.image_analysis).length > 0) {
+                        const imageAnalysisDiv = document.getElementById('imageAnalysis');
+                        imageAnalysisDiv.innerHTML = Object.entries(data.image_analysis)
+                            .map(([key, data]) => `
+                                <div class="bg-white p-4 rounded-lg shadow">
+                                    <div class="font-semibold text-gray-700 mb-2">
+                                        ${key.replace('_', ' ').toUpperCase()}
+                                    </div>
+                                    <div class="text-lg ${data.status === 'normal' ? 'status-normal' : 'status-abnormal'}">
+                                        ${data.value} ${data.unit}
+                                    </div>
+                                    <div class="text-sm text-gray-500">
+                                        Status: ${data.status.toUpperCase()}
+                                    </div>
+                                </div>
+                            `).join('');
+                        imageAnalysisCard.classList.remove('hidden');
+                    } else {
+                        imageAnalysisCard.classList.add('hidden');
+                    }
+                } else {
+                    alert(data.error || 'An error occurred during analysis');
+                }
+            } catch (error) {
+                console.error(error);
+                alert('Failed to analyze medical data. Please try again.');
+            } finally {
+                loadingOverlay.classList.add('hidden');
+            }
+        });
+
+        // File input preview
+        const fileInput = document.querySelector('input[type="file"]');
+        fileInput.addEventListener('change', (e) => {
+            const label = e.target.parentElement.querySelector('span');
+            if (e.target.files.length > 0) {
+                label.textContent = e.target.files[0].name;
+            } else {
+                label.textContent = 'Upload medical report or scan';
+            }
+        });
+    </script>
+</body>
+</html>
