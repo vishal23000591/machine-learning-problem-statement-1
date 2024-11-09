@@ -1,0 +1,575 @@
+Category,Term
+disease,disease
+disease,disorder
+disease,condition
+disease,illness
+disease,syndrome
+disease,infection
+disease,cancer
+disease,tumor
+disease,heart disease
+disease,heart attack
+disease,myocardial infarction
+disease,stroke
+disease,diabetes
+disease,hypertension
+disease,high blood pressure
+disease,asthma
+disease,chronic bronchitis
+disease,COPD
+disease,emphysema
+disease,pneumonia
+disease,tuberculosis
+disease,HIV
+disease,AIDS
+disease,flu
+disease,influenza
+disease,common cold
+disease,bronchitis
+disease,allergy
+disease,hay fever
+disease,allergic rhinitis
+disease,sinusitis
+disease,arthritis
+disease,osteoarthritis
+disease,rheumatoid arthritis
+disease,gout
+disease,Alzheimer's disease
+disease,dementia
+disease,epilepsy
+disease,seizure disorder
+disease,multiple sclerosis
+disease,Parkinson's disease
+disease,lupus
+disease,systemic lupus erythematosus
+disease,hepatitis
+disease,cirrhosis
+disease,liver disease
+disease,kidney disease
+disease,nephritis
+disease,renal failure
+disease,thyroid disease
+disease,hypothyroidism
+disease,hyperthyroidism
+disease,Graves' disease
+disease,Hashimoto's disease
+disease,anemia
+disease,iron deficiency anemia
+disease,thalassemia
+disease,sickle cell anemia
+disease,leukemia
+disease,lymphoma
+disease,Hodgkin's lymphoma
+disease,non-Hodgkin's lymphoma
+disease,melanoma
+disease,skin cancer
+disease,basal cell carcinoma
+disease,squamous cell carcinoma
+disease,prostate cancer
+disease,breast cancer
+disease,lung cancer
+disease,colorectal cancer
+disease,bladder cancer
+disease,esophageal cancer
+disease,stomach cancer
+disease,pancreatic cancer
+disease,ulcer
+disease,peptic ulcer
+disease,gastritis
+disease,GERD
+disease,acid reflux
+disease,migraine
+disease,tension headache
+disease,cluster headache
+disease,eczema
+disease,atopic dermatitis
+disease,psoriasis
+disease,rosacea
+disease,lupus erythematosus
+disease,osteoporosis
+disease,fibromyalgia
+disease,IBS
+disease,irritable bowel syndrome
+disease,Crohn's disease
+disease,ulcerative colitis
+disease,cystic fibrosis
+disease,blood clot
+disease,deep vein thrombosis
+disease,DVT
+disease,varicose veins
+disease,peripheral artery disease
+disease,endometriosis
+disease,polycystic ovary syndrome
+disease,PCOS
+disease,meningitis
+disease,encephalitis
+disease,chickenpox
+disease,measles
+disease,mumps
+disease,rubella
+disease,whooping cough
+disease,pertussis
+disease,scarlet fever
+disease,dengue fever
+disease,malaria
+disease,Lyme disease
+disease,Zika virus
+disease,chikungunya
+disease,ebola
+disease,Marburg virus
+disease,anthrax
+disease,plague
+disease,rabies
+disease,hepatitis A
+disease,hepatitis B
+disease,hepatitis C
+disease,COVID-19
+disease,SARS
+disease,MERS
+disease,avian flu
+disease,swine flu
+disease,H1N1
+disease,RSV
+disease,shingles
+disease,herpes zoster
+disease,herpes simplex
+disease,HSV-1
+disease,HSV-2
+disease,HPV
+disease,human papillomavirus
+disease,mononucleosis
+disease,Epstein-Barr virus
+disease,smallpox
+disease,typhoid fever
+disease,cholera
+disease,tetanus
+disease,botulism
+disease,diphtheria
+disease,rheumatic fever
+disease,Buerger's disease
+disease,Behcet's disease
+disease,Zika virus
+disease,chronic fatigue syndrome
+disease,lupus nephritis
+disease,pelvic inflammatory disease
+disease,septicemia
+disease,tuberculosis
+disease,Huntington's disease
+disease,Kawasaki disease
+disease,Cushing's syndrome
+disease,Graves' disease
+disease,acromegaly
+disease,Ehlers-Danlos syndrome
+disease,pneumonitis
+disease,bronchiectasis
+disease,pulmonary embolism
+disease,tinnitus
+disease,glaucoma
+disease,keratitis
+disease,herpes simplex keratitis
+disease,meniere's disease
+disease,COPD exacerbation
+disease,hepatomegaly
+disease,splenomegaly
+disease,bipolar disorder
+disease,schizophrenia
+disease,autism spectrum disorder
+disease,macular degeneration
+disease,age-related macular degeneration
+disease,primary biliary cirrhosis
+disease,scleroderma
+disease,hemophilia
+disease,amyloidosis
+disease,spinal cord injury
+disease,spinal muscular atrophy
+disease,hernia
+disease,gallbladder disease
+disease,peptic ulcer disease
+disease,gastrointestinal reflux disease
+disease,Celiac disease
+disease,panhypopituitarism
+disease,pulmonary fibrosis
+disease,rheumatic heart disease
+disease,polymyositis
+disease,dermatomyositis
+disease,Klinefelter syndrome
+disease,Turner syndrome
+disease,Wiskott-Aldrich syndrome
+disease,achondroplasia
+disease,hemochromatosis
+disease,hypoparathyroidism
+disease,hyperparathyroidism
+disease,alopecia areata
+symptom,symptom
+symptom,sign
+symptom,indicator
+symptom,fever
+symptom,high temperature
+symptom,chills
+symptom,sweating
+symptom,headache
+symptom,migraine
+symptom,dizziness
+symptom,nausea
+symptom,vomiting
+symptom,diarrhea
+symptom,constipation
+symptom,fatigue
+symptom,tiredness
+symptom,weakness
+symptom,shortness of breath
+symptom,difficulty breathing
+symptom,cough
+symptom,sore throat
+symptom,runny nose
+symptom,stuffy nose
+symptom,sneezing
+symptom,chest pain
+symptom,heart palpitations
+symptom,pain
+symptom,joint pain
+symptom,muscle pain
+symptom,back pain
+symptom,abdominal pain
+symptom,stomachache
+symptom,rash
+symptom,itching
+symptom,redness
+symptom,swelling
+symptom,bruising
+symptom,bleeding
+symptom,dry skin
+symptom,hair loss
+symptom,blurred vision
+symptom,double vision
+symptom,numbness
+symptom,tingling
+symptom,memory loss
+symptom,forgetfulness
+symptom,confusion
+symptom,anxiety
+symptom,panic attacks
+symptom,depression
+symptom,insomnia
+symptom,sleep disorder
+symptom,loss of appetite
+symptom,weight loss
+symptom,weight gain
+symptom,loss of balance
+symptom,tremors
+symptom,jerking movements
+symptom,sensitivity to light
+symptom,sensitivity to sound
+symptom,slurred speech
+symptom,difficulty swallowing
+symptom,hoarseness
+symptom,loss of smell
+symptom,loss of taste
+symptom,frequent urination
+symptom,painful urination
+symptom,blood in urine
+symptom,yellowing of skin
+symptom,jaundice
+symptom,pale skin
+symptom,bluish lips
+symptom,purple toes
+symptom,cold hands
+symptom,night sweats
+symptom,lightheadedness
+symptom,fainting
+symptom,seizures
+symptom,muscle stiffness
+symptom,rigidity
+symptom,paralysis
+symptom,hallucinations
+symptom,delusions
+symptom,agitation
+symptom,restlessness
+symptom,chest tightness
+symptom,irritability
+symptom,mood swings
+symptom,head fullness
+symptom,earache
+symptom,loss of appetite
+symptom,hot flashes
+symptom,menstrual irregularity
+symptom,pelvic pain
+symptom,nausea and vomiting
+symptom,weight loss with no cause
+symptom,hyperhidrosis
+symptom,flushing
+symptom,dysphagia
+symptom,shortness of breath
+symptom,wheezing
+symptom,hemoptysis
+symptom,laryngitis
+symptom,petechiae
+symptom,cyanosis
+symptom,cognitive decline
+symptom,confusion
+symptom,delirium
+symptom,hiccups
+symptom,tinnitus
+symptom,visual disturbances
+symptom,lightheadedness
+symptom,blurry vision
+symptom,unexplained bruising
+symptom,diabetic ketoacidosis
+symptom,anxiety attacks
+symptom,back spasms
+symptom,constipation
+symptom,restless leg syndrome
+symptom,sore muscles
+symptom,muscle fatigue
+symptom,diabetes-related nerve pain
+symptom,fainting spells
+symptom,pruritus
+symptom,nasal congestion
+symptom,chronic cough
+symptom,chronic fatigue
+symptom,menstrual cramps
+symptom,muscle cramps
+symptom,dry mouth
+symptom,tongue swelling
+symptom,nausea after eating
+symptom,chronic dizziness
+symptom,dry throat
+symptom,yellowing of the eyes
+symptom,chronic acid reflux
+symptom,nightmares
+symptom,blood in stool
+symptom,blood clots
+symptom,vomiting blood
+treatment,treatment
+treatment,therapy
+treatment,medication
+treatment,remedy
+treatment,cure
+treatment,surgery
+treatment,operation
+treatment,chemotherapy
+treatment,radiation therapy
+treatment,immunotherapy
+treatment,physical therapy
+treatment,rehabilitation
+treatment,occupational therapy
+treatment,speech therapy
+treatment,counseling
+treatment,psychotherapy
+treatment,cognitive behavioral therapy
+treatment,CBT
+treatment,exercise
+treatment,diet
+treatment,lifestyle changes
+treatment,self-care
+treatment,IV therapy
+treatment,dialysis
+treatment,antibiotic therapy
+treatment,antiviral therapy
+treatment,pain management
+treatment,wound care
+treatment,blood transfusion
+treatment,insulin therapy
+treatment,anticoagulation
+treatment,diabetes management
+treatment,breathing treatment
+treatment,inhaler therapy
+treatment,oxygen therapy
+treatment,hormone therapy
+treatment,steroids
+treatment,laser therapy
+treatment,acupuncture
+treatment,massage therapy
+treatment,chiropractic care
+treatment,homeopathy
+treatment,herbal medicine
+treatment,naturopathy
+treatment,alternative medicine
+treatment,detoxification
+treatment,vitamin therapy
+treatment,nutritional supplements
+treatment,hydrotherapy
+treatment,palliative care
+treatment,end-of-life care
+treatment,assisted breathing
+treatment,ventilation
+treatment,CPR
+treatment,AED
+treatment,gene therapy
+treatment,bone marrow transplant
+treatment,stem cell therapy
+treatment,joint replacement
+treatment,psychological support
+treatment,nutritional therapy
+treatment,surgery for cancer
+treatment,pharmacological treatment
+treatment,laser treatment for vision
+treatment,dialysis for kidney disease
+treatment,antihistamines
+treatment,topical steroids
+treatment,physiotherapy for fractures
+treatment,antibiotic ointment
+treatment,vaccine
+treatment,IV antibiotics
+treatment,chelation therapy
+treatment,corticosteroid injections
+treatment,antiseptic cleaning
+treatment,plasma exchange
+treatment,antidiabetic drugs
+treatment,antihypertensive drugs
+treatment,antipsychotic medication
+treatment,counseling for depression
+treatment,obesity treatment
+treatment,gastric bypass surgery
+treatment,colorectal cancer surgery
+treatment,sleep therapy
+treatment,hormone replacement therapy
+treatment,breathing assistance
+treatment,trauma care
+treatment,palliative radiation therapy
+treatment,laser spine surgery
+treatment,IV fluids
+treatment,orthotics
+treatment,bariatric surgery
+treatment,psychotherapy for PTSD
+treatment,antiviral medications
+treatment,stem cell transplantation
+treatment,blood thinners
+treatment,anticonvulsants
+treatment,biological therapy
+treatment,biopsy
+treatment,therapy for OCD
+treatment,stem cell for stroke recovery
+treatment,topical antifungal
+treatment,electroconvulsive therapy
+treatment,dietary modifications
+treatment,lipid-lowering medications
+treatment,radiotherapy for breast cancer
+treatment,childbirth delivery
+treatment,oral rehydration
+treatment,emergency care
+treatment,anesthesia
+treatment,surgical resection
+treatment,deep brain stimulation
+treatment,respiratory therapy
+treatment,sepsis treatment
+treatment,oxygen therapy for asthma
+treatment,immunosuppressive drugs
+treatment,vaccination for travel
+treatment,skin graft
+treatment,hair restoration
+treatment,diabetic retinopathy treatment
+treatment,cancer radiotherapy
+drug,drug
+drug,medicine
+drug,medication
+drug,prescription
+drug,antibiotic
+drug,antiviral
+drug,antifungal
+drug,painkiller
+drug,NSAID
+drug,steroid
+drug,anti-inflammatory
+drug,antidepressant
+drug,antipsychotic
+drug,anxiolytic
+drug,antihistamine
+drug,antacid
+drug,diuretic
+drug,beta blocker
+drug,ACE inhibitor
+drug,calcium channel blocker
+drug,statin
+drug,insulin
+drug,vaccine
+drug,opioid
+drug,sedative
+drug,hypnotic
+drug,muscle relaxant
+drug,bronchodilator
+drug,anticoagulant
+drug,blood thinner
+drug,probiotic
+drug,laxative
+drug,antispasmodic
+drug,antiseptic
+drug,topical cream
+drug,ointment
+drug,inhaler
+drug,tablet
+drug,capsule
+drug,syrup
+drug,injection
+drug,IV drip
+drug,chemotherapy drugs
+drug,hormone replacement therapy
+drug,contraceptive
+drug,IUD
+drug,birth control pills
+drug,anticonvulsant
+drug,mood stabilizer
+drug,vitamin
+drug,mineral supplement
+drug,immune booster
+drug,anti-diabetic
+drug,antigout
+drug,corticosteroid
+drug,decongestant
+drug,cough suppressant
+drug,digestive enzyme
+drug,metformin
+drug,hydrocodone
+drug,oxycodone
+drug,fentanyl
+drug,gabapentin
+drug,amitriptyline
+drug,sertraline
+drug,fluoxetine
+drug,clonazepam
+drug,lorazepam
+drug,diazepam
+drug,levothyroxine
+drug,paracetamol
+drug,ibuprofen
+drug,acetaminophen
+drug,penicillin
+drug,tetracycline
+drug,cephalosporins
+drug,azithromycin
+drug,antimalarial
+drug,chloroquine
+drug,ivermectin
+drug,oseltamivir
+drug,budesonide
+drug,salbutamol
+drug,dapoxetine
+drug,varenicline
+drug,nisoldipine
+drug,loratadine
+drug,cetirizine
+drug,diphenhydramine
+drug,phenylephrine
+drug,levocetirizine
+drug,buprenorphine
+drug,caffeine
+drug,sodium bicarbonate
+drug,furosemide
+drug,lisinopril
+drug,captopril
+drug,propranolol
+drug,losartan
+drug,enoxaparin
+drug,warfarin
+drug,apixaban
+drug,rivaroxaban
+drug,dabigatran
+drug,colchicine
+drug,tramadol
+drug,tizanidine
+drug,trazodone
+drug,clindamycin
+drug,lorazepam
+drug,zolpidem
+drug,oxycodone
+drug,carbamazepine
